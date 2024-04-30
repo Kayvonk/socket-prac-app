@@ -1,0 +1,94 @@
+main {
+  display: flex;
+}
+
+#chatPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: calc(100%-30vw);
+  min-width: 375px;
+}
+
+#chatBoxContainer {
+  width: 100%;
+}
+
+#chatTextArea {
+  width: 100%;
+  min-height: 30vh;
+  background-color: #f1f1f1;
+  border-radius: 12px 12px 0 0;
+  padding: 10px 0;
+}
+
+#chatForms {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 10vh;
+  justify-content: space-between;
+}
+
+#messageForm {
+  width: 100%;
+  display: flex;
+}
+
+#messageText {
+  width: 80%;
+}
+
+#messageText input {
+  width: 90%;
+  border: none;
+  padding: 20px;
+  border-radius: 0px 0 0 12px;
+}
+
+#messageText input:focus {
+  outline: none;
+}
+
+#messageForm button {
+  width: 20%;
+  border: none;
+  padding: 0;
+  border-radius: 0 0 12px 0;
+  background-color: #e2e2e2;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 30vw;
+  padding: 10vh 0;
+}
+
+.chatMessage{
+margin: 10px
+}
+
+@media (max-width: 480px) {
+  main {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+  }
+  #chatPageContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+  }
+}

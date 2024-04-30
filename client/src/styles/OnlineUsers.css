@@ -1,0 +1,15 @@
+#onlineUsersContainer {
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+
+#onlineeUsersLabel {
+    font-size: 14pt;
+    margin-bottom: 20px;
+}
+
+.onlineUser {
+    margin-bottom: 20px;
+}

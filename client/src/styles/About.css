@@ -1,0 +1,16 @@
+#aboutSection {
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 3vw;
+    text-align: center;    
+}
+
+@media (max-width: 480px) {
+    #aboutSection {
+        font-size: 14pt;
+        margin: 0 20px;
+  }
+}

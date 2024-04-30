@@ -1,0 +1,11 @@
+#openChatsContainer {
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+
+#OpenChatsLabel {
+  font-size: 14pt;
+  margin-bottom: 20px;
+}
