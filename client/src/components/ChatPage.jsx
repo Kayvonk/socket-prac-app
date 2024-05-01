@@ -17,7 +17,6 @@ export default function ChatPage({ socket }) {
 
   useEffect(() => {
     socket.on("newUserResponse", (data) => setUsers(data));
-    socket.on("newUserResponse", (data) => setUsers(data));
     console.log("users:", users);
   }, [socket, users]);
 
@@ -39,7 +38,7 @@ export default function ChatPage({ socket }) {
 
   const handleRoomForm = (e) => {
     e.preventDefault();
-    //sends the username and socket ID to the Node.js server
+    //sends the room name to the Node.js server
     try {
       socket.emit("newRoom", { roomName});
       setRooms([...rooms, roomName])
@@ -51,7 +50,6 @@ export default function ChatPage({ socket }) {
 
   const handleMessageSend = (e) => {
     e.preventDefault();
-    //sends the username and socket ID to the Node.js server
     try {
       socket.emit("message", {
         text: messageInput,
